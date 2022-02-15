@@ -17,12 +17,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    private func setupCollectionView() {
-        let configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
-        let layout = UICollectionViewCompositionalLayout.list(using: configuration)
-        collectionView.collectionViewLayout = layout
-
-        let registration = UICollectionView.CellRegistration<UICollectionViewListCell, Item> { cell, indexPath, item in
+    private func createCellRegistration() -> UICollectionView.CellRegistration<UICollectionViewListCell, Item> {
+        return UICollectionView.CellRegistration<UICollectionViewListCell, Item> { cell, indexPath, item in
             var config = UIListContentConfiguration.cell()
             switch item {
             case let .fruitItem(fruit):
@@ -30,6 +26,14 @@ extension ViewController {
             }
             cell.contentConfiguration = config
         }
+    }
+
+    private func setupCollectionView() {
+        let configuration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        let layout = UICollectionViewCompositionalLayout.list(using: configuration)
+        collectionView.collectionViewLayout = layout
+
+        let registration = createCellRegistration()
 
         // データの設定
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { collectionView, indexPath, item in
