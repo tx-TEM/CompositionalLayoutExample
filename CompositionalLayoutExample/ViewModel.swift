@@ -13,6 +13,13 @@ struct ViewModel {
 
         ]
     }
+
+    func items(for section: Section) -> [Item] {
+        switch section {
+        case .fruitSection:
+            return fruits.map { Item.fruitItem($0) }
+        }
+    }
 }
 
 extension ViewModel {
