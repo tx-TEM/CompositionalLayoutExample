@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302D26A828D5157B000BD849 /* HostingContentViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D26A628D5157B000BD849 /* HostingContentViewConfiguration.swift */; };
+		302D26A928D5157B000BD849 /* HostingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302D26A728D5157B000BD849 /* HostingContentView.swift */; };
 		6FA8C7DA27BC69AD0018B992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8C7D927BC69AD0018B992 /* AppDelegate.swift */; };
 		6FA8C7DC27BC69AD0018B992 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8C7DB27BC69AD0018B992 /* SceneDelegate.swift */; };
 		6FA8C7DE27BC69AD0018B992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA8C7DD27BC69AD0018B992 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302D26A628D5157B000BD849 /* HostingContentViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingContentViewConfiguration.swift; sourceTree = "<group>"; };
+		302D26A728D5157B000BD849 /* HostingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingContentView.swift; sourceTree = "<group>"; };
 		6FA8C7D627BC69AD0018B992 /* CompositionalLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA8C7D927BC69AD0018B992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FA8C7DB27BC69AD0018B992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302D26A528D51540000BD849 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				302D26A728D5157B000BD849 /* HostingContentView.swift */,
+				302D26A628D5157B000BD849 /* HostingContentViewConfiguration.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6FA8C7CD27BC69AD0018B992 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		6FA8C7D827BC69AD0018B992 /* CompositionalLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				302D26A528D51540000BD849 /* View */,
 				6FA8C7D927BC69AD0018B992 /* AppDelegate.swift */,
 				6FA8C7DB27BC69AD0018B992 /* SceneDelegate.swift */,
 				6FA8C7DD27BC69AD0018B992 /* ViewController.swift */,
@@ -144,7 +158,9 @@
 				6FA8C7DE27BC69AD0018B992 /* ViewController.swift in Sources */,
 				6FA8C7DA27BC69AD0018B992 /* AppDelegate.swift in Sources */,
 				6FA8C7EE27BC6B200018B992 /* ViewModel.swift in Sources */,
+				302D26A828D5157B000BD849 /* HostingContentViewConfiguration.swift in Sources */,
 				6FA8C7DC27BC69AD0018B992 /* SceneDelegate.swift in Sources */,
+				302D26A928D5157B000BD849 /* HostingContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
